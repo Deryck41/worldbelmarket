@@ -1,0 +1,142 @@
+.leftmenu__textcolaps{
+	font-size: 11px !important;
+}
+
+/* Теперь можно использовать шрифт
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+*/
+#astedwebbox a div{
+    font-weight: 200;
+}
+#astedwebbox h6{
+    padding-left: 6px;
+}
+
+.btn-primary {
+    color: #4e73df !important;
+    background-color: rgba(255, 255, 255, 0) !important;
+    border-color: #4e73df !important;
+}
+.btn-primary:hover {
+    color: #fff !important;
+    background-color: #2e59d9 !important;
+    border-color: #2653d4 !important;
+}
+/* PERSONAL DIVISIONS */
+
+.personal_divisions-body{
+	position: relative;
+}
+
+.personal_divisions-icon{
+	position: absolute;
+	right: 10px;
+	top: 18px;
+}
+
+.personal_divisions-icon > i:hover{
+	    color: #3b3d56;
+}
+
+.construct_color{
+    margin-bottom: 20px;
+display: flex;}
+.constuct_color_blue{
+	    margin-right: 10px;
+width: 64px;
+height: 64px;
+background: #011246;
+    border-radius: 20px;
+}
+.constuct_color_red{
+	    margin-right: 10px;
+width: 64px;
+height: 64px;
+background: #733939;
+border-radius: 20px;
+}
+.constuct_color_green{
+	    margin-right: 10px;
+width: 64px;
+height: 64px;
+    background: #387d22;
+border-radius: 20px;
+}
+.constuct_color_yelllow{
+	    margin-right: 10px;
+width: 64px;
+height: 64px;
+    background: #ccaa2f;
+border-radius: 20px;
+}
+.constuct_color_shadow{
+		    margin-right: 10px;
+width: 64px;
+height: 64px;
+background: #1d1f1c;
+border-radius: 20px;
+}
+
+
+.comment_user{
+}
+.sidebar-heading {
+    font-family: unset;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px !important;
+    line-height: 11px;
+    letter-spacing: 0.2px;
+    color: #BBACAC;
+}
+.user_comment_data{
+}
+.card{
+	box-shadow: 0 0 10px white;
+	transition: box-shadow 0.9s ease;
+}
+.card:hover {
+
+	box-shadow: 0 0.15rem 1.75rem 0 rgba(58,59,69,0.25)!important;
+	transition: box-shadow 0.9s ease;
+}
+
+.mewsfooter{justify-content: space-between;display: flex;}
+.sendcommentsnews{
+ margin-top: 15px;
+    margin-bottom: 15px;
+margin-left: 20px;}
+.addcommentnews{
+	margin-top: -30px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.terranbtnadd{
+    background-color: #ffffff;
+    width: 30%;
+    border-color: #c4c7d0;
+    border: 2px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 22px;
+    color: rgba(31, 32, 65, 0.25);
+}
+.terranbtnlike{
+	    margin-top: -30px;
+	margin-bottom: 30px;
+    margin-right: 20px;
+    background-color: #ffffff;
+    width: 90px;
+    border-color: #c4c7d0;
+    border: 2px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 22px;
+    color: rgba(31, 32, 65, 0.25);
+}
+.pointer{
+    cursor: pointer;
+}
+a.dropdown-item:hover{
+    background-color: #d7e0fbb5;
+}

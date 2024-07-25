@@ -1,0 +1,5 @@
+{foreach from=$menuArr item=menu}
+    <li>
+	    <a href="/{$menu.link}/">{$menu.title}</a>
+    </li>
+{/foreach}

@@ -1,0 +1,122 @@
+
+	<!-- =========================
+        Footer Section
+    ============================== -->
+	<footer class="footer wow fadeInUp animated" data-wow-delay="900ms">
+		<div class="container-fluid custom-width">
+			<div class="row">
+				<div class="col-md-12 col-lg-3 mobile-80">
+					<!-- ===========================
+    						Footer About
+    					 =========================== -->
+					<div class="footer-about">
+						<a href="/" class="footer-about-logo">
+							<img src="{$BLOCKPlogotippodval}" style="
+							max-width: 200px;
+						" alt="Logo" />
+						</a>
+						<div class="footer-description">
+							<!-- <p>Можете найти нас</p> -->
+						</div>
+						<div class="wb-social-media">
+							<a href="#"><i class="fa fa-brands fa-vk"></i></a>
+							<a href="{$BLOCKPssylkanainstagramm}"><i class="fa fa-brands fa-instagram"></i></a>
+							<a href="{$BLOCKPssylkanafeysbuk}"><i class="fa fa-brands fa-facebook"></i></a>
+							<a href="{$BLOCKPtg}"><i class="fa fa-brands fa-telegram"></i></a>
+							<a href="#"><i class="fa fa-brands fa-youtube"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-6 col-md-2 col-lg-2 footer-nav">
+					<!-- ===========================
+    						Festival Deals
+    					 =========================== -->
+					<h6 class="footer-subtitle">Меню</h6>
+					{menu forsection="2" style="main-footer"}
+				</div>
+				<div class="col-6 col-md-2 col-lg-2 footer-nav">
+					<!-- ===========================
+    						Top Stores
+    					 =========================== -->
+					<div class="stores-list">
+						<h6 class="footer-subtitle">Навигация</h6>
+						<ul>
+						{menu forsection='9' style="footer"}
+						</ul>
+					</div>
+				</div>
+				<div class="col-12 col-md-12 col-lg-2">
+					<div class="app-wrapper footer-col">
+                    {$BLOCKPfuter}
+						
+					</div>
+				</div>
+				<div class="col-12 col-md-12 col-lg-2">
+					<div class="app-wrapper footer-col">
+						<div class="qr-icon">
+							<img src="{$THEME_URL}img/qr.png" />
+						</div>
+						<p>Наведите камеру и скачайте приложение</p>
+						<div class="app-icons">
+							<div class="app-icon"><img src="{$THEME_URL}img/apple.png" /></div>
+							<div class="app-icon"><img src="{$THEME_URL}img/play.png" /></div>
+							<div class="app-icon"><img src="{$THEME_URL}img/huawei.png" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p style="width: 100%; text-align: center; color: white; padding: 40px 0;">{$BLOCKPkontakty}</p>
+			<div class="mt-2 d-flex justify-content-center">
+			
+			<img class="w-50 mt-2 d-flex justify-content-center" src="/asted/uploads/eripwbm.png">
+			</div>
+		</div>
+	</footer>
+
+	{* <section class="copyright wow fadeInUp animated copyright-2 copyright-3" data-wow-delay="1500ms">
+		<div class="container">
+			<div class="col-12 d-flex justify-content-center align-items-center gap-4">
+				<a class="asted-link" href=" https://asted.by/" traget="_blank" style="color: #FF9800">Создание сайта</a>
+				<a class="asted-link" href="https://asted.by/" traget="_blank">
+					<img style="filter: invert(90%) hue-rotate(70deg) brightness(120%);" src="{$THEME_URL}img/asted/asted.png" alt="asted.by" />
+				</a>
+				<a class="asted-link" href="https://hatahost.by/" traget="_blank" style="color: #FF9800">Хостинг сайта</a>
+			</div>
+		</div>
+	</section> *}
+
+	<!-- =========================
+    	Main Loding JS Script
+    ============================== -->      
+    {if $isAuthUser == true}<script src="{$THEME_URL}js/userModal.js"></script>{/if}
+	<script src="{$THEME_URL}js/jquery.min.js"></script>
+    <script src="{$THEME_URL}js/search.js"></script>
+	<script src="{$THEME_URL}js/jquery-ui.js"></script>
+	<script src="{$THEME_URL}js/popper.js"></script>
+	<script src="{$THEME_URL}js/bootstrap.min.js"></script>
+	<script src="{$THEME_URL}js/jquery.counterup.min.js"></script>
+	<script src="{$THEME_URL}js/jquery.nav.js"></script>
+	<script src="{$THEME_URL}js/custom.js"></script>
+	<!-- <script src="js/jquery.nicescroll.js"></script> -->
+	<script src="{$THEME_URL}js/jquery.rateyo.js"></script>
+	<script src="{$THEME_URL}js/jquery.scrollUp.min.js"></script>
+	<script src="{$THEME_URL}js/jquery.sticky.js"></script>
+	<script src="{$THEME_URL}js/mobile.js"></script>
+	<script src="{$THEME_URL}js/lightslider.min.js"></script>
+	<script src="{$THEME_URL}js/owl.carousel.min.js"></script>
+	<script src="{$THEME_URL}js/circle-progress.min.js"></script>
+	<script src="{$THEME_URL}js/waypoints.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+	<script src="{$THEME_URL}js/simplePlayer.js"></script>
+
+	<script src="{$THEME_URL}js/main.js?v2"></script>
+	<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+	<script src="{$THEME_URL}js/languages.js"></script>
+	<script src="https://translate.google.com/translate_a/element.js?cb=TranslateInit"></script>
+    <script async src="{$THEME_URL}js/signInDialog.js" type="module"></script>
+    <script src="{$THEME_URL}js/asted-cart/asted-cart.js" type="module"></script>
+    <script src="{$THEME_URL}js/asted-cart/asted-cart-page.js" type="module"></script>
+	<script src="{$THEME_URL}js/asted-cart/asted-shop.js" type="module"></script>
+</body>
+
+</html>

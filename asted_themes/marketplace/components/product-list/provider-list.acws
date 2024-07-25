@@ -1,0 +1,39 @@
+{foreach from=$products item=$product}
+
+
+    <tr>
+        <td class="text-center">
+            <div class="img-wishlist-wrapper">
+                <a href="#"><img src="img/cloth-item.jpg" alt="" /></a>
+            </div>
+        </td>
+        <td class="text-center">
+            <div class="vertical-center">
+                <p>Sanon 600D camera</p>
+            </div>
+        </td>
+        <td class="text-center">
+            <div class="vertical-center">
+                <div class="wishlist-price">
+                    <p>$ 20.00</p>
+                </div>
+            </div>
+        </td>
+        <td class="text-center">
+            <div class="vertical-center">
+                <div class="red-color">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                    Отсутствует
+                </div>
+            </div>
+        </td>
+        <td class="text-center">
+            <div class="vertical-center">
+                <a href="#!" class="btn btn-primary select-market-btn">
+                    Перейти
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </div>
+        </td>
+    </tr>
+{/foreach}

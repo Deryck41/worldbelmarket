@@ -1,0 +1,9 @@
+<div class="menu">
+    <ul class="wd-megamenu-ul">
+        {foreach from=$menuArr item=menu}
+            <li>
+                <a href="{$menu.link}" class="main-menu-list">{$menu.title}</a>
+            </li>
+        {/foreach}
+    </ul>
+</div>

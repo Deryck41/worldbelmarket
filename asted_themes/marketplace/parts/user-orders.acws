@@ -1,0 +1,67 @@
+{if $isAuthUser == true}
+    
+<section>
+
+		<div class="container">
+            <div class="user-orders">
+                {foreach from=$userOrdersInfo item=$userOrder}
+                    <div class="user-order">
+                        <h5 class="order-date">Заказ от {$userOrder.order.date}</h5>
+                        <span class="order-status"> Номер заказа: <span class="order-value">{$userOrder.order.order_stamp}</span>
+                        </span>
+                        <span class="order-status"> Статус:<span class="order-value">
+                        {if $userOrder.order.status == "created"}
+                            Ожидает оплаты
+                            {elseif $userOrder.order.status == "Completed"}
+                                Оплата завершена
+                                {elseif $userOrder.order.status == "Authorized"}
+                                    Ожидание перевода
+                                    {elseif $userOrder.order.status == ""}
+                                        Ошибка
+                        {/if}
+                        </span>
+                        </span>
+                        <span class="order-status"> Тип оплаты: {$userOrder.order.payment_method}
+                        </span>
+                        <span class="order-status"> Тип доставки: {$userOrder.order.delivery_method}
+                        </span>
+                        {if $userOrder.order.adress != null}
+                            <span class="order-status"> Адрес доставки: {$userOrder.order.adress}
+                        </span>
+                            {/if}
+                        <h5 class="products-header">Товары:</h5>
+                        <div class="products row catalog-box gap-vertical">
+                            {foreach from=$userOrder.products item=catalog}
+                                <div class="col-lg-4 catalog-item-shop">
+                                <div class="card-wrapper d-flex align-items-center flex-column" data-item-id="{$catalog.id}">
+                                    <div class="img-card-wrapper">
+                                        <img class="img-card-item img-fluid" src="{$catalog.image_images}">
+                                        <a class="img-link" href="/katalog/{$catalog.pageurl}/">Просмотр</a>
+                                    </div>
+                                    <div class="card-text-content d-flex align-items-center flex-column">
+                                            <a class="product-title">{$catalog.title}</a>
+                                            <p class="price"><span class="asted-price">{$catalog.price}</span> BYN</p>
+                                            
+                                        <div class="row">
+                                            <a class="card-button" href="/katalog/{$catalog.pageurl}/">Подробнее</a>
+                                            {* <a class="card-button btn-add">В корзину</a> *}
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                {/foreach}
+                        </div>
+                    </div>
+                {/foreach}
+            </div>
+		</div>
+
+	</section>
+    {if $uType == "user"}
+        <script src="{$THEME_URL}js/user-detail.js" type="module"></script>
+    {else}
+        <script src="{$THEME_URL}js/provider-detail.js" type="module"></script>
+    {/if}
+    {else}
+        <h1>Вы не вошли</h1>
+    {/if}

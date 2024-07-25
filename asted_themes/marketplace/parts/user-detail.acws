@@ -1,0 +1,138 @@
+{if $isAuthUser == true}
+    <link rel="stylesheet" href="{$THEME_URL}css/checkbox.css" />
+<section>
+
+		<div class="container">
+			<h1 class="profile-title mt-5 mb-2">Профиль</h1>
+			{menu style="user-menu"}
+			<div class="row mt-5 mb-3">
+				<ul class="user-detail-tabs">
+					<li><a class="active-detail-tab">Личные данные</a></li>
+					{* <li><a>Уведомления</a></li> *}
+				</ul>
+			</div>
+			<div class="row mb-5 user-data-block">
+				<div class="col-lg-8 p-0">
+					<div class="user-profile-data user-detail-edit">
+						<div class="ns-inputs">
+							<div>
+                            {if $uType == "user"}
+								<p>Имя</p>
+                                {else}
+                                    <p>Название компании</p>
+                            {/if}
+                            
+                        <input type="text" name="{if $uType == "user"}firstName{else}company{/if}" value="{$uName}">
+							</div>
+							
+                            {if $uType == "user"}
+                                <div>
+								<p>Фамилия</p>
+								<input type="text" name="surName" value="{$uSurName}">
+							</div>
+                            {else}
+                                <div>
+								<p>УНП</p>
+								<input type="text" name="INT" value="{$uUNP}">
+							</div>
+                            {/if}
+                            {if $uType == "user"}
+							
+                            <label class="a8z-toggle-switch" data-style="rounded" data-color="orange" data-label="left">
+							
+                            <input checked type="checkbox" id="legal" data-value="{$legalType}">
+							
+                            <span class="toggle">
+                              <span class="switch"></span>
+                            </span>
+							<span class="label">Я </span>
+                          </label>
+                                {/if}
+
+                            
+						</div>
+                        {if $uType == "user"}
+                            <div class="ns-inputs">
+                                <div>
+                                    <p>Отчество</p>
+                                    <input type="text" name="lastName" value="{$uLastname}">
+                                </div>
+                            </div>
+                            
+                            {else}
+                                <div class="ns-inputs">
+                                    <div>
+                                        <p>Платёжные реквезиты</p>
+                                        <input type="text" name="requisites" value="{$requisites}">
+                                    </div>
+                                </div>
+                                {/if}
+						{if $uType == "user" && $legalType == 0}
+							<div class="ns-inputs">
+                                    <div>
+                                        <p>Реквезиты</p>
+                                        <input type="text" name="uRequisites" class="uRequisites" value="{$uRequisites}">
+                                    </div>
+                                    <div>
+                                    <p>УНП</p>
+                                    <input type="text" name="uINT" class="uINT" value="{$uINT}">
+                                </div>
+                                </div>
+                                
+						{/if}
+						<div class="ns-inputs">
+							<div>
+								<p>Телефон</p>
+								<input type="text" name="phone" value="{$uPhone}">
+							</div>
+							<div>
+								<p>Эл.почта</p>
+								<input type="text" name="email" value="{$uEmail}">
+							</div>
+						</div>
+						<button class="save-user-data-btn">Сохранить изменения</button>
+					</div>
+				</div>
+				{* <div class="col-lg-12 p-0 mt-5" id="creditCards">
+					<h3>Мои карты</h3>
+					<div class="credit-card-list col-lg-12 p-0">
+						<div class="credit-card-item col-lg-3">
+							<div class="credit-card-icons">
+								<div class="cards-img-wrapper"><img src="img/visa.png"></div>
+								<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+									<path
+										d="M170.5 51.6L151.5 80h145l-19-28.4c-1.5-2.2-4-3.6-6.7-3.6H177.1c-2.7 0-5.2 1.3-6.7 3.6zm147-26.6L354.2 80H368h48 8c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8V432c0 44.2-35.8 80-80 80H112c-44.2 0-80-35.8-80-80V128H24c-13.3 0-24-10.7-24-24S10.7 80 24 80h8H80 93.8l36.7-55.1C140.9 9.4 158.4 0 177.1 0h93.7c18.7 0 36.2 9.4 46.6 24.9zM80 128V432c0 17.7 14.3 32 32 32H336c17.7 0 32-14.3 32-32V128H80zm80 64V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16zm80 0V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16zm80 0V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16z" />
+								</svg>
+							</div>
+							<div class="card-number">
+								<p>4320 37•• •••• 6676</p>
+							</div>
+							<div class="card-status">
+								<p>Основная карта</p>
+							</div>
+						</div>
+					</div>
+					<button class="add-card-btn">Добавить карту</button>
+				</div> *}
+			</div>
+
+			<div class="row mb-5 notiсe-block none-block">
+				<div class="notiсe-wrapper">
+					<p class="notice-text">Уведомлений нет</p>
+
+					<a href="user.html" class="save-user-data-btn">Перейти на главную</a>
+
+				</div>
+			</div>
+
+		</div>
+
+	</section>
+    {if $uType == "user"}
+        <script src="{$THEME_URL}js/user-detail.js" type="module"></script>
+    {else}
+        <script src="{$THEME_URL}js/provider-detail.js" type="module"></script>
+    {/if}
+    {else}
+        <h1>Вы не вошли</h1>
+    {/if}

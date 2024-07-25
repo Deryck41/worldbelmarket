@@ -1,0 +1,89 @@
+.container-slider{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.slider{
+    flex: 1 1 20%;
+    display: flex;
+    border: 1px solid #CCC;
+    flex-direction: column;
+}
+
+.slider-props{
+    margin: 15px;
+}
+
+.slider-slide{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.slider-slide > .input-group > span{
+    width: 150px;
+    margin-left: 30px;
+}
+
+.prop{
+    display: flex;
+    gap: 12px;
+    margin-left: 45px;
+}
+
+.swiper {
+    width: 75vw;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slide_value img{
+    height: 70px;
+  }
+
+  .slide_value{
+    height: 70px;
+    display: flex;
+    gap: 10px;
+  }
+
+  .prop div{
+    display: flex;
+    align-items: center;
+  }
+
+  button{
+    border: 1px solid #CCC;
+
+  }
+  button:focus{
+    outline: none;
+  }
+
+  .slider__header{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .slider-controls{
+    margin: 10px;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+  }
+
+  .del-slider-slide-button{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+  }

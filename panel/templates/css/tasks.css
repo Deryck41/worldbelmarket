@@ -1,0 +1,76 @@
+ .task_status__clouse
+ { background: #1c1e1f;
+    color: #d6d6d6;
+ border-radius: 10px;}
+ .task_status__open
+ {     background: #e8e8e8;
+    color: #292929;
+ border-radius: 10px;}
+
+
+.task_ember__firstelement {
+    opacity: 0;
+    width: 100%;
+    height: 0px;
+    position: absolute;
+    top: 62px;
+    z-index: -1;
+}
+
+.tasks .tasks-column {
+    border-right: dotted 2px steelblue;
+    min-width: 210px;
+}
+
+.tasks .tasks .col {
+    min-width: 15.8rem;
+}
+
+.tasks .tasks-title-edit {
+    display: none;
+}
+
+.tasks .tasks-title {
+    cursor: pointer;
+}
+
+.tasks .tasks-title:hover {
+
+}
+
+.card-img-profile {
+    width: 2rem;
+    height: 2rem;
+}
+
+.card-status {
+    background: #e0dede;
+    border-radius: 10px;
+}
+
+.card-messanges {
+    width: max-content;
+    border-radius: 12px;
+}
+
+.card-messanges-add {
+    background: lightskyblue !important;
+    color: white !important;
+}
+
+.card.deadline {
+    box-shadow: 0 0 10px rgba(237, 14, 14, 0.6);
+}
+
+/*.tasks-column .card:first-child::before{*/
+/*    display: block;*/
+/*    content: '';*/
+/*    border: 8px solid transparent;*/
+/*    border-top: 10px solid #ff5b8f;*/
+/*    position: absolute;*/
+/*    bottom: -19px;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    margin: auto;*/
+/*    width: 1px;*/
+/*}*/

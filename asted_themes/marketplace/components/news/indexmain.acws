@@ -1,0 +1,25 @@
+{foreach from=$newsArr item=news}
+    <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3 wow fadeIn animated" data-wow-delay="300ms">
+    <div class="wd-news-box">
+        <figure class="figure">
+            <figcaption></figcaption>
+            <div class="news-img-wrapper">
+                <img src="{$news.images}" class="figure-img img-fluid rounded" alt="news-img" />
+            </div>
+            <div class="wd-news-info">
+                <div class="figure-caption">
+                    <a href="/news/{$news.pageurl}/">{$news.title}</a>
+                </div>
+                <div class="news-wrapper">
+                    <p class="wd-news-content">
+                    {$news.content}
+                    </p>
+                </div>
+                <a href="/news/{$news.pageurl}/" class="badge badge-light wd-news-more-btn">Читать больше
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+            <span class="angle-right-to-left"></span>
+        </figure>
+    </div>
+</div>
+    {/foreach}

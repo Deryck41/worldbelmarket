@@ -1,0 +1,39 @@
+<section>
+
+		<div class="container-fluid no-padding">
+			<div class="grid-catalog">
+				<div class="grid-catalog-item-1 grid-catalog-img-wrapper">
+					<a class="grid-catalog-link" href="/katalog-odezhdy-i-obuvi/">
+						<img src="{$THEME_URL}img/catalog/1.jpg" class="grid-catalog-img">
+						<p>ОДЕЖДА И ОБУВЬ</p>
+					</a>
+				</div>
+				<div href="/katalog-proizvodstvenogo-oborudovaniya/" class="grid-catalog-item-2 grid-catalog-img-wrapper">
+					<a class="grid-catalog-link" href="/katalog-proizvodstvenogo-oborudovaniya/">
+						<img src="{$THEME_URL}img/catalog/6.jpg" class="grid-catalog-img">
+						<p>ПРОИЗВОДСТВЕННОЕ ОБОРУДОВАНИЕ</p>
+					</a>
+				</div>
+				<div class="grid-catalog-item-3 grid-catalog-img-wrapper">
+					<a href="/katalog-aksessuarov/" class="grid-catalog-link">
+						<img src="{$THEME_URL}img/catalog/3.jpg" class="grid-catalog-img">
+						<p>АКСУССУАРЫ</p>
+					</a>
+				</div>
+				<div class="grid-catalog-item-4 grid-catalog-img-wrapper">
+					<a href="/katalog-shin/" class="grid-catalog-link">
+						<img src="{$THEME_URL}img/shina/00.jpg" class="grid-catalog-img">
+						<p>ШИНЫ</p>
+					</a>
+				</div>
+				<div class="grid-catalog-item-5 grid-catalog-img-wrapper">
+					<a  href="/katalog-elektroniki/" class="grid-catalog-link">
+						<img src="{$THEME_URL}img/catalog/5.jpg" class="grid-catalog-img">
+						<p>ЭЛЕКТРОНИКА</p>
+					</a>
+				</div>
+			</div>
+		</div>
+
+	</section>
+    

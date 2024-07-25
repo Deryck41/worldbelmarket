@@ -1,0 +1,7 @@
+RewriteEngine on
+#ASTED SYSTEM: Правила обработки главной страницы
+DirectoryIndex index.php
+#ASTED SYSTEM: Правила работы страниц
+RewriteRule ^([-0-9A-Za-z]+)/$ ?route=$1 [L]
+RewriteRule ^([-0-9A-Za-z]+)/([-0-9A-Za-z]+)/$ ?route=$1&id=$2 [L]
+RewriteRule ^([-0-9A-Za-z]+)/([-0-9A-Za-z]+)/([-0-9A-Za-z]+)/$ ?route=$1&id=$2&result=$3 [L]

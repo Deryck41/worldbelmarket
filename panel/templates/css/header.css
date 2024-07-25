@@ -1,0 +1,197 @@
+.nav-item_terran_wmenu{
+    position: relative;
+    overflow: hidden;
+}
+.nav-item_terran_wmenu:hover{
+	background:#d8e2ef;
+	transition: all 0.6s ease;
+}
+.nav-item_terran_wmenu{
+	transition: all 0.6s ease;
+}
+.nav-item_terran_wmenu:hover:before {
+    content: "";
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, .1)), to(rgba(255, 255, 255, .5)));
+    background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
+    height: 80px;
+    width: 60px;
+    position: absolute;
+    top: 0px;
+    left: -95px;
+    -webkit-transform: skewX(55deg);
+    transform: skewX(55deg);
+    -webkit-transition: 10s ease-in-out;
+    transition: 10s ease-in-out;
+    -webkit-animation-name: mySlide;
+    animation-name: mySlide;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+@-webkit-keyframes mySlide {
+                                from {
+                                    left: -95px;
+                                }
+                                to {
+                                    left: 600px;
+                                }
+                            }
+                            @keyframes mySlide {
+                                from {
+                                    left: -95px;
+                                }
+                                to {
+                                    left: 600px;
+                                }
+                            }
+
+
+
+
+
+
+ul.navbar-nav.ml-auto.template_bg.headerbar_right {
+    border-bottom-left-radius: 35px;
+}
+.news-header{
+	padding-top: 1.25rem;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+}
+.newsicones {
+        padding-top: 8px;
+}
+.newsicones > img {
+	float: left;
+        padding-right: 8px;
+}
+   a:hover{transition: all 0.6s ease;}
+   a:{transition: all 0.6s ease;}
+a.newsautor:hover {
+    color: #000;
+    text-decoration: none !important;
+}
+.card-body {
+padding-top: 5px !important;}
+.newsicones > a > img {
+    padding-right: 4px;
+}
+.newsdata{
+	    display: block;
+    float: left;
+	    font-family: 'Roboto', sans-serif !important;
+}
+.newsautor{
+	margin-top: -2px;
+	    padding-left: 10px;
+	    display: block;
+    float: left;
+	    font-family: 'Roboto', sans-serif !important;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+color: rgba(31, 32, 65, 0.5);
+}
+.newstitle{
+	font-style: normal;
+font-weight: bold;
+font-size: 19px;
+line-height: 24px;
+color: #1F2041 !important;
+}
+
+footer.sticky-footer.bg-white.pb-0 {
+    width: 80%;
+    margin: 0 auto;
+	box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06);
+	    border-top-left-radius: 20px;
+		    border-top-right-radius: 20px;
+}
+.copyright.text-center.my-auto {
+    margin-top: -13px !important;
+    padding-bottom: 13px;
+}
+.construct_body{
+    padding: 10px;
+    position: fixed;
+    right: 0px;
+    top: 25%;
+    height: 70px;
+    width: 90px;
+    background: #ffffff;
+    z-index: 10;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+	box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06);
+	cursor: pointer;
+}
+.construct_body__open{
+	height: 370px !important;
+    width: 390px !important;
+}
+.tox-statusbar__branding {
+    margin-left: 1ch;
+    display: none;
+}
+.music-button{
+    cursor: pointer;
+}
+.music{
+    position: relative;
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    -o-transition: transform 1s;
+    transition: transform 1s;
+    transition: transform 1s,-webkit-transform 1s;
+    -webkit-transform-origin: right;
+    -ms-transform-origin: right;
+    transform-origin: right;
+    -webkit-transform: perspective(2500px) rotateY(0deg);
+    transform: perspective(2500px) rotateY(0deg);
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    height: 98%;
+    -webkit-transform-origin: right;
+    -ms-transform-origin: right;
+    transform-origin: top;
+    -webkit-transform: perspective(2500px) rotateY(0deg);
+    transform: perspective(2500px) rotatex(0deg);
+    z-index: 100;
+}
+.music-click{
+    -webkit-transform: perspective(2500px) rotateY(55deg);
+    transform: perspective(2500px) rotatex(55deg);
+}
+.music-player{
+    position: absolute;
+    margin-top: 42px;
+    height: 29px;
+    width: 240px;
+    margin-left: -11px;
+}
+.europa-plus-radio{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    border: none;
+}
+@media screen and (min-width: 769px) {
+    #content-wrapper{
+        margin-left: 224px;
+    } 
+
+    #accordionSidebar{
+        position: fixed;
+        height: 100vh;
+        overflow-y: scroll;
+    }
+
+    .nav-item{
+        min-height: 55px;
+    }
+}
+

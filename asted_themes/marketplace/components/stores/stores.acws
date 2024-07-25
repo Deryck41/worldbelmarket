@@ -1,0 +1,5 @@
+<select class="select-category-new-product">
+    {foreach from=$stores item=$store}
+        <option value="{$store.id}">{$store.namesection}</option>
+    {/foreach}
+</select>

@@ -1,0 +1,70 @@
+    .list-file {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        list-style: none;
+    }
+
+    .list-file-item.active {
+        border-left: 5px solid #4e73df;
+    }
+
+    .list-file:not(.list-file_multi)>li {
+        border: 1px solid rgba(0, 0, 0, .125);
+    }
+
+    .list-file-item {
+        padding: 0.75rem 1.25rem;
+        margin-bottom: -1px;
+        background-color: #fff;
+
+    }
+
+    .list-file-item a {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+    }
+
+    .list-file-item:hover {
+        background-color: #f0f0f1;
+    }
+
+    .list-file-item span {
+        padding-left: 15px;
+        font-size: 12px;
+        color: #858796;
+    }
+
+    .list-file-item:first-child {
+        border-top-left-radius: 0.35rem;
+        border-top-right-radius: 0.35rem;
+    }
+
+    .list-file-item:last-child {
+        margin-bottom: 0;
+        border-bottom-right-radius: 0.35rem;
+        border-bottom-left-radius: 0.35rem;
+    }
+
+    .list-file-item_multi a {
+        position: relative;
+    }
+
+    .list-file-item_multi>a::after {
+        content: '';
+        width: 0;
+        height: 0;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        border-top: 4px solid black;
+        position: absolute;
+        top: 40%;
+        left: 90%;
+        margin-left: 10px;
+        transform: rotate(-90deg);
+    }
+
+    .CodeMirror {
+        height: 600px;
+    }

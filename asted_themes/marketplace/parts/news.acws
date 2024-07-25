@@ -1,0 +1,11 @@
+<section id="wd-news">
+<div class="container-fluid custom-width">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h2 class="news-title">Новости</h2>
+        </div>
+        {news forsection="8" style="indexmain"}
+        {catalog forcatalog="7" style="catalog"} 
+    </div>
+</div>
+</section>

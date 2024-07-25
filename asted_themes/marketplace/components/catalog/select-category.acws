@@ -1,0 +1,9 @@
+<select class="search-select" name="" id="">
+    <option value="Null">Не выбрано</option>
+    {foreach from=$categoryArr item=$categoryItem}
+        {if $URL2 != $categoryItem.pageurl}
+        <option class="search-option" value="{$categoryItem.pageurl}">{$categoryItem.name}</option>
+        {/if}
+    {/foreach}
+    
+</select>

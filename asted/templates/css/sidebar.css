@@ -1,0 +1,11 @@
+.sidebar{
+    background-color: #2d2b2b;
+}
+
+.plus{
+    transition: .4s;
+}
+
+.plus:hover{
+    color: white;
+}

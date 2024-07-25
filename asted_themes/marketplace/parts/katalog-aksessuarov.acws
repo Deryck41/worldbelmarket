@@ -1,0 +1,106 @@
+<section id="product-amazon" class="product-shop-page product-shop-full-grid">
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="row">
+                <div class="col-4 col-md-2 client-img">
+                    <img class="figure-img img-fluid" src="img/partner/shina/han.png" alt="" />
+                </div>
+                <div class="col-4 col-md-2 client-img">
+                    <img class="figure-img img-fluid" src="img/partner/shina/pirl.png" alt="" />
+                </div>
+                <div class="col-4 col-md-2 client-img">
+                    <img class="figure-img img-fluid" src="img/partner/shina/good.png" alt="" />
+                </div>
+                <div class="col-4 col-md-2 client-img">
+                    <img class="figure-img img-fluid" src="img/partner/shina/mich.png" alt="" />
+                </div>
+                <div class="col-4 col-md-2 client-img">
+                    <img class="figure-img img-fluid" src="img/partner/shina/cooper.png" alt="" />
+                </div>
+                <div class="col-4 col-md-2 client-img">
+                    <img class="figure-img img-fluid" src="img/partner/shina/bel.png" alt="" />
+                </div>
+            </div>
+        </div>
+        <div class="col-12 p0">
+            <div class="page-location">
+                <ul>
+                    <li>
+                        <a href="#"> Главная <span class="divider">/</span> </a>
+                    </li>
+                    <li>
+                        <a class="page-location-active" href="#">
+                            {$TITLE}
+                            <span class="divider">/</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <div class="col-12 col-md-4 col-lg-3 katalog-view">
+            <!-- =========================
+Search Option
+============================== -->
+            
+
+            <!-- =========================
+                Category Option
+                ============================== -->
+            <div class="side-bar category category-md">
+                <h5 class="title">Фильтры</h5>
+                <div class="side-bar tags-box">
+                <h5 class="title">Категория</h5>
+                {category style="select-category" type="category" forcatalog="5"}
+            </div>
+                
+                {* <ul class="dropdown-list-menu"> *}
+
+
+            
+            <!-- =========================
+                Tags Box Option
+                ============================== -->
+            {* <div class="side-bar tags-box">
+                <h5 class="title">Tags</h5>
+                <ul>
+                    <li><a href="#">Comerce </a></li>
+                    <li><a href="#">Trending</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">market</a></li>
+                    <li><a href="#">mobile</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Comerce </a></li>
+                    <li><a href="#">Trending</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">market</a></li>
+                    <li><a href="#">mobile</a></li>
+                    <li><a href="#">Business</a></li>
+                </ul>
+            </div> *}
+
+            <!-- =========================
+                Color Box Option
+                ============================== -->
+       
+        </div>
+        <div class="col-12 col-md-8 col-lg-9 product-grid">
+            <div class="row">
+
+                <div class="tab-content col-12">
+                    <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="row gap-vertical catalog-box" data-id="5">
+
+                        {catalog forcatalog="5" style="catalog"} 
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+</section>
+<script src="{$THEME_URL}js/select-category.js"></script>

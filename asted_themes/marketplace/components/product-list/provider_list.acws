@@ -1,0 +1,60 @@
+{foreach from=$products item=$product}
+     <tr>
+        <td class="text-center">
+            <div class="img-wishlist-wrapper">
+                {$product.title}
+            </div>
+        </td>
+        <td class="text-center" style="height: 40%";>
+            <div class="vertical-center" style="height: 100%">
+            {assign var=mainPhoto value=";"|explode:$product.photo}
+<img src="{if $product.photo == null}{$BLOCKPizobrazheniepriotsutsviifoto}{else}{$mainPhoto[0]}{/if}" alt="" style="height: 100%">
+            </div>
+        </td>
+        <td class="text-center">
+            <div class="vertical-center">
+                <div class="wishlist-price">
+                    <p>{$product.price} BYN</p>
+                </div>
+            </div>
+        </td>
+        <td class="text-center">
+            <div class="vertical-center">
+               
+                    
+            {if $product.status == "moderation"}
+                <div class="grey-color">
+                <i class="fa-solid fa-clock"></i> На модерации
+                </div>
+            {/if}
+            {if $product.status == "active"}
+                <div class="green-color">
+                <i class="fa-solid fa-cart-shopping"></i> На маркетплейсе
+                </div>
+            {/if}
+            {if $product.status == "rejected"}
+                <div class="red-color">
+                <i class="fa-solid fa-times"></i> Отклонено
+                </div>
+            {/if}
+                
+            </div>
+        </td>
+        <td class="text-center">
+            <div class="vertical-center">
+            {if $product.status == "moderation"}
+                <a href="/view-product?id={$product.id}" class="btn btn-primary select-market-btn">
+                    Перейти
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            {/if}
+            {if $product.status == "active"}
+                <a href="/katalog/{$product.origin_pageurl}" class="btn btn-primary select-market-btn">
+                    Перейти
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            {/if}
+            </div>
+        </td>
+    </tr>
+{/foreach}

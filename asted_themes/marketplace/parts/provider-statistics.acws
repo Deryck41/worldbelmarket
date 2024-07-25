@@ -1,0 +1,68 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+{if $isAuthUser == true && $uType == 'provider'}
+    
+    <section>
+    
+            <div class="container">
+                <div class="user-orders">
+                    {foreach from=$providerSales item=$providerSale}
+                        <h5>Заказ от {$providerSale.order.date}</h5>
+                        <span class="order-status"> Статус:<span class="order-value">
+                        {if $providerSale.order.status == "created"}
+                            Ожидает оплаты
+                            {elseif $providerSale.order.status == "Completed"}
+                                Оплата завершена
+                                {elseif $providerSale.order.status == "Authorized"}
+                                    Ожидание перевода
+                                    {elseif $providerSale.order.status == ""}
+                                        Ошибка
+                        {/if}
+                        </span>
+                        </span>
+                        <span class="order-status"> Тип доставки: {$providerSale.order.delivery_method}
+                        </span>
+
+                        <h5 class="products-header">Товары:</h5>
+                        <div class="products-provider-statistics">
+                            
+                                
+                                <div class="col-lg-4 catalog-item-shop">
+                                <div class="card-wrapper d-flex align-items-center flex-column" data-item-id="{$providerSale.product.id}">
+                                    <div class="img-card-wrapper">
+                                        <img class="img-card-item img-fluid" src="{$providerSale.product.image_images}">
+                                        <a class="img-link" href="/katalog/{$providerSale.product.pageurl}/">Просмотр</a>
+                                    </div>
+                                    <div class="card-text-content d-flex align-items-center flex-column">
+                                            <a class="product-title">{$providerSale.product.title}</a>
+                                            <p class="price"><span class="asted-price">Продано за {$providerSale.product.price}</span> BYN</p>
+                                            
+                                        <div class="row">
+                                            <a class="card-button" href="/katalog/{$providerSale.product.pageurl}/">Просмотр</a>
+                                            {* <a class="card-button btn-add">В корзину</a> *}
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+
+                                <div class="review">
+                                    <h5>Отзыв</h5>
+                                    <div class="review-grade">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="review-block">
+
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium incidunt amet ratione architecto tempora nam aliquid doloribus non quia recusandae?
+                                    </div>
+                                </div>
+                                
+                                
+                        </div>
+                    {/foreach}
+                </div>
+            </div>
+    
+        </section>
+        {else}
+            <h1>Доступ запрещён</h1>
+        {/if}

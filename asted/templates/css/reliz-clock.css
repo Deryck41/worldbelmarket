@@ -1,0 +1,76 @@
+.timer-area {
+    background: transparent url(../img/timer-area-pattern.png) left top;
+    text-align: center;
+    /* padding-top: 2em; */
+    height: auto;
+
+}
+.timer-area h1 {
+    color: white;
+}
+/* ---------- FOOTER ---------- */
+footer#disclaimer p {
+    font-size: .875em;
+    color: #909091;
+    font-style: italic;
+}
+footer#disclaimer p span {
+    font-size: 1.2em;
+    color: #2a9ccc;
+}
+footer#main-footer {
+    background-color: #fcfbfb;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fcfbfb), to(#ffffff));
+    background-image: -webkit-linear-gradient(top, #fcfbfb, #ffffff);
+    background-image: -moz-linear-gradient(top, #fcfbfb, #ffffff);
+    background-image: -o-linear-gradient(top, #fcfbfb, #ffffff);
+    background-image: linear-gradient(to bottom, #fcfbfb, #ffffff);
+    border-top: 1px solid #dcdee0;
+    -webkit-box-shadow: inset 0 2px 5px #e6dede;
+    box-shadow: inset 0 2px 5px #e6dede;
+    text-align: center;
+    padding: 2em 0;
+    margin-top: 4em;
+}
+footer#main-footer p {
+    font-size: .875em;
+    margin-bottom: 1em;
+}
+/* ---------- TIMER ---------- */
+#countdown{
+    padding: 0;
+    margin: 0;
+}
+ul#countdown li {
+    display: inline-block;
+    background: transparent url(../img/timer-piece.png) no-repeat left top;
+    width: 104px;
+    /* margin-bottom: 4em; */
+    line-height: normal;
+    text-align: center;
+}
+ul#countdown li span {
+    font-size: 3em;
+    font-weight: bold;
+    color: #1f2225;
+    /* height: 108px; */
+    /* line-height: 108px; */
+    position: relative;
+}
+ul#countdown li span::before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    border-top: 1px solid white;
+    position: absolute;
+    bottom:0;
+}
+ul#countdown li p.timeRefDays,
+ul#countdown li p.timeRefHours,
+ul#countdown li p.timeRefMinutes,
+ul#countdown li p.timeRefSeconds {
+    margin-top: 1em;
+    color: #909091;
+    text-transform: uppercase;
+    font-size: .875em;
+}

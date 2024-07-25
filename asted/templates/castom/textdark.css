@@ -1,0 +1,16 @@
+.template_text{color: #e1e6ec !important;}
+.crusix{
+	border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    margin-top: -10px;
+    padding: 10px;
+	background: #ffffff;
+}
+.sidebar-heading {color: #BBACAC !important;}
+.template_text > a {color: #e1e6ec !important;}
+.template_text > ul {color: #e1e6ec !important;}
+.template_text > li {color: #e1e6ec !important;}
+.template_text > i {color: #e1e6ec !important;}
+.template_text > span > a {color: #e1e6ec !important;}
+.template_text > li > a > span{color: #e1e6ec !important; }
+.template_text > li > a > i{color: #e1e6ec !important;}

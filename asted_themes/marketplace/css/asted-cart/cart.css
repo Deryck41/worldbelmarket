@@ -1,0 +1,27 @@
+.asted-cart__link {
+  display: block;
+  position: relative;
+}
+
+.asted-cart__cart-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 12px;
+  position: absolute;
+  right: -4px;
+  top: -5px;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+}
+
+.asted-cart__cart-info_rounded {
+  border-radius: 50%;
+}

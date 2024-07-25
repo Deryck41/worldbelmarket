@@ -1,0 +1,43 @@
+
+.card {
+    border: 1px solid #f9f9f9;
+    border-radius: var(--card-border);
+    box-shadow: 0 1px 2px rgb(57 67 77 / 15%) !important
+}
+
+h1, h2, h3, h4, h5, h6, div, span, a, table, button, input, optgroup, select, textarea{
+    font-family: var(--main-fonts);
+}
+
+
+#content-wrapper{
+    background-color: var(--backgrond-color);
+}
+
+
+
+/****ASTED: LEFT SIDE BAR--ЛЕВЫЙ САЙДБАР****/
+@media only screen and (min-width: 768px) {
+    .sidebar .nav-item .nav-link span{
+        font-size: .9375rem !important;
+        letter-spacing: 0.2px;
+        line-height: 20px;
+        color: var(--main-color);
+        }
+    }
+
+    .sidebar .nav-item .nav-link i{
+        color:  var(--main-color);
+    }
+
+    .template_text{color: var(--main-color) !important;}
+.template_text > a {color:  var(--main-color) !important;}
+.template_text > ul {color:var(--main-color) !important;}
+.template_text > li {color: var(--main-color) !important;}
+.template_text > i {color: var(--main-color) !important;}
+.template_text > span > a {color: var(--main-color) !important;}
+.template_text > li > a > span{color: var(--main-color) !important;}
+.template_text > li > a > i{color: var(--main-color) !important;}
+button#sidebarToggle {
+    background: var(--main-color) !important;
+}

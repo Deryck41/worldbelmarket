@@ -1,0 +1,12 @@
+<div class="post-item-description">
+                                <h2 class="text-center">{$newsArr.title}</h2>
+                                {$newsArr.content}
+                            </div>
+                            <div class="blog-wrapper col-lg-12 d-flex flex-wrap">
+                                {$galery = explode(';', $newsArr.galery)}
+                                {foreach $galery as $key => $value}
+                                <div class="col-lg-3 blog-img-wrapper">
+                                    <img alt="" src="{$value}" data-fancybox="gallery" data-caption="{$newsArr.title}">
+                                </div>
+                                {/foreach}
+                            </div>

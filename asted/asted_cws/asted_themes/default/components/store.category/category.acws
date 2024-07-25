@@ -1,0 +1,15 @@
+{foreach from=$categoryArr item=category}
+<div class="col mb-4">
+                      <a href="/category/{$category.link}/" class="category-card">
+                        <div class="category-card__image">
+                          <img
+                            src="/asted/uploads/{$category.images}"
+                            alt="{$category.name}"
+                          />
+                        </div>
+                        <div class="category-card__title">
+                          <h4>{$category.name}</h4>
+                        </div>
+                      </a>
+                    </div>
+                {/foreach}

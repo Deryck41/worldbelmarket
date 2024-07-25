@@ -1,0 +1,3 @@
+<div class="content"></div>
+
+<script src="{$THEME_URL}js/loadViewDetail.js"></script>

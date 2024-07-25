@@ -1,0 +1,18 @@
+{foreach from=$catalogArr item=catalog}
+    <div class="col-lg-4">
+    <div class="card-wrapper d-flex align-items-center flex-column" data-item-id="{$catalog.id}">
+        <div class="img-card-wrapper">
+            <img class="img-card-item img-fluid" src="{$catalog.image_images}">
+            <a class="img-link" href="/katalog/{$catalog.pageurl}/">Просмотр</a>
+        </div>
+        <div class="card-text-content d-flex align-items-center flex-column">
+                <a class="product-title">{$catalog.title}</a>
+                <p class="price"><span class="asted-price">{$catalog.price}</span> BYN</p>
+            <div class="row">
+                <a class="card-button" href="/katalog/{$catalog.pageurl}/">Подробнее</a>
+                <a class="card-button btn-add">В корзину</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    {/foreach}

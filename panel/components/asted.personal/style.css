@@ -1,0 +1,15 @@
+.search-input-profile{
+    width: 100%;
+  border: 1px solid #CCC;
+  outline: none;
+  font-size: 20px;
+}
+
+.button-search{
+    border: none;
+  width: 30px;
+}
+
+.profile-search{
+    display: flex;
+}

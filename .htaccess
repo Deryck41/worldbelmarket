@@ -1,0 +1,27 @@
+RewriteEngine on
+#ASTED CLOUD: Правила обработки главной страницы
+DirectoryIndex index.php
+#ASTED CLOUD: Правила работы страниц
+RewriteRule ^([-0-9A-Za-z]+)/$ ?type=pages&page=$1 [L]
+#ASTED CLOUD: Детальная страница новости / каталога
+RewriteRule ^news/([-0-9A-Za-z]+)/$ ?type=news&news=$1 [L]
+RewriteRule ^katalog/([-0-9A-Za-z]+)/$ ?type=catalog&catalog=$1 [L]
+#ASTED CLOUD: Страница категорий
+RewriteRule ^category/([-0-9A-Za-z]+)/$ ?type=category&categoryy=$1 [L]
+RewriteRule ^category/([-0-9A-Za-z]+)$ ?type=category&categoryy=$1 [L]
+#ASTED CLOUD: Правила обработки 404
+#ErrorDocument 404 /index.php?error=404
+#ASTED CLOUD: Автоматическое создание sitemap.xml
+RewriteRule ^sitemap.xml$ sitemap.php [L,QSA]
+#ASTED CLOUD: Автоматическое создание rss.xml
+RewriteRule ^rss.xml$ rss.php [L,QSA]
+#ASTED CLOUD: Автоматическое создание труба страниц rss-yandex.xml
+RewriteRule ^rss-yandex.xml$ rss-yandex.php [L,QSA]
+#ASTED CLOUD: Добавляем слеш страницам, и не создаем дубли
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !(.*)/$
+RewriteRule ^(.*[^/])$ $1/ [L,R=301]
+#ASTED CLOUD: Убираем лишние слеши на главной, и не создаем дубли главной
+RewriteCond %{THE_REQUEST} //
+RewriteRule .* /$0 [R=301,L]

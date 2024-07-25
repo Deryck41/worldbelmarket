@@ -1,0 +1,32 @@
+{include "header.acws"}
+
+{if $CONTENT == null}
+    {if $URL2 == null}
+            {* Формируем относительный путь к файлу в папке parts/ *}
+            {$filePath = "{$THEME}/parts/{$URL}.acws"}
+            {* Проверяем, существует ли файл, прежде чем подключить его *}
+            {if file_exists($filePath)}
+                {include file=$filePath}
+            {else}
+                {* Обработка случая, когда файла не существует *}
+                {header("HTTP/1.0 404 Not Found")}
+                <div style="text-align: center;">ASTED CMS: Error 404, page {$URL} not found!</div>
+            {/if}
+    {else}
+        {if $URL == 'view-product'}
+            {include file="parts/view-product.acws"}
+        {/if}
+        {if $URL == 'katalog'}
+            {catalog type="detail" product=$URL2 style="detalka"}
+        {/if}
+        {if $URL == 'news' and $URL2 != null}
+            {news type="detail" product=$URL2 style="xxxx"}
+            {/if}
+    {/if}
+{else}
+    <div class="container p-3">{$CONTENT}</div>
+{/if}
+
+
+
+{include "footer.acws"}
